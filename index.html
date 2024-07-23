@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Minecraft</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #portfolio {
+            margin: 20px 0;
+        }
+        .item {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .contact-form {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portfolio Minecraft</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="portfolio">
+            <h2>Le Mie Costruzioni</h2>
+            <div class="item">
+                <h3>Costruzione 1</h3>
+                <img src="path/to/your/image1.jpg" alt="Costruzione 1">
+                <p>Descrizione della costruzione 1.</p>
+            </div>
+            <div class="item">
+                <h3>Costruzione 2</h3>
+                <img src="path/to/your/image2.jpg" alt="Costruzione 2">
+                <p>Descrizione della costruzione 2.</p>
+            </div>
+            <!-- Aggiungi altre costruzioni qui -->
+        </section>
+
+        <section id="contact">
+            <h2>Contattami</h2>
+            <div class="contact-form">
+                <form action="mailto:tuoindirizzoemail@example.com" method="post" enctype="text/plain">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Messaggio</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Invia</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Portfolio Minecraft. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
